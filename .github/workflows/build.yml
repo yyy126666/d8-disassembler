@@ -62,6 +62,12 @@ jobs:
         id: build
         # language=PowerShell
         run: |
+          $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
+          $vs = & $vswhere -latest -products * -property installationPath
+          Write-Host "Detected Visual Studio: $vs"
+          $env:vs2022_install = $vs
+          $env:GYP_MSVS_OVERRIDE_PATH = $vs
+          $env:GYP_MSVS_VERSION = "2022"
           cd target\v8
           $release = "out.gn\x64.release"
           mkdir $release
