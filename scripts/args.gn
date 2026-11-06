@@ -18,3 +18,7 @@ treat_warnings_as_errors = false
 symbol_level = 0
 blink_symbol_level = 0
 v8_enable_fast_mksnapshot = true
+
+symbol_level = 0
+blink_symbol_level = 0
+v8_enable_fast_mksnapshot = true
