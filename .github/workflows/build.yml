@@ -7,9 +7,6 @@ on:
         description: 'V8 Version / Branch'
         required: true
         default: '13.8.258.18'
-  push:
-    branches:
-      - main
 
 jobs:
   build:
