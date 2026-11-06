@@ -15,3 +15,6 @@ v8_enable_pointer_compression_shared_cage = true
 v8_enable_external_code_space = true
 
 treat_warnings_as_errors = false
+symbol_level = 0
+blink_symbol_level = 0
+v8_enable_fast_mksnapshot = true
